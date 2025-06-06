@@ -1,7 +1,7 @@
 package exercicios;
 import java.util.Scanner;
 
-public class CriancaEsperanca {
+public class crianca_esperanca {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("---------------------");
