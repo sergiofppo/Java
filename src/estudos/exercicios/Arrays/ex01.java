@@ -11,7 +11,7 @@ public class ex01 {
         int[] vetorB = new int[vetorA.length];
 
         for (int i = 0; i< vetorA.length; i++) {
-            System.out.println("Digite o valor " + i + " : ");
+            System.out.print("Digite o valor " + i + " : ");
             vetorA[i] = scan.nextInt();
             vetorB[i] = vetorA[i];
         }
