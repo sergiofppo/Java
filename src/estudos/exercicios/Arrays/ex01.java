@@ -3,6 +3,21 @@ package estudos.exercicios.Arrays;
 import java.util.Scanner;
 
 public class ex01 {
+
+    public static void lerVetor(double[] vetor, Scanner scan) {
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.print("Escreva o valor " + i + " : ");
+            vetor[i] = scan.nextInt();
+        }
+    }
+
+    public static void imprimirVetor(double[] vetor) {
+        for (double valor : vetor) {
+            System.out.println(valor + " ");
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -17,17 +32,17 @@ public class ex01 {
         }
 
         System.out.print("Vetor A = ");
-        for(int i = 0; i < vetorA.length; i++) {
-            System.out.print(vetorA[i] + " ");
+        for (int j : vetorA) {
+            System.out.print(j + " ");
         }
 
-        System.out.println("");
+        System.out.println();
 
         System.out.print("Vetor B = ");
-        for(int i = 0; i < vetorB.length; i++) {
-            System.out.print(vetorB[i] + " ");
+        for (int j : vetorB) {
+            System.out.print(j + " ");
         }
 
-        System.out.println("");
+        System.out.println(" ");
     }
 }
