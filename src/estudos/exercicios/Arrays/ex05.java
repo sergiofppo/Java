@@ -4,14 +4,13 @@ import java.util.Scanner;
 
 import static estudos.exercicios.Arrays.ex01.imprimirVetor;
 import static estudos.exercicios.Arrays.ex01.lerVetor;
-import static java.lang.Math.*;
 
-public class ex04 {
+public class ex05 {
 
-    public static double[] calcularRaiz(double[] vetor) {
+    public static double[] calcular(double [] vetor) {
         double [] resultado = new double[vetor.length];
         for (int i = 0; i < vetor.length; i++) {
-            resultado[i] = sqrt(vetor[i]);
+            resultado[i] = vetor[i] * i;
         }
 
         return resultado;
@@ -25,7 +24,7 @@ public class ex04 {
 
 
         lerVetor(vetorA, scan);
-        double[] vetorB = calcularRaiz(vetorA);
+        double[] vetorB = calcular(vetorA);
         imprimirVetor(vetorB);
 
     }

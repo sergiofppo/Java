@@ -21,7 +21,7 @@ public class ex02 {
 
         Scanner scan = new Scanner(System.in);
 
-        double[] vetorA = new double[8];
+        double[] vetorA = new double[4];
 
 
         lerVetor(vetorA, scan);

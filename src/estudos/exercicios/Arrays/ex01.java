@@ -6,7 +6,7 @@ public class ex01 {
 
     public static void lerVetor(double[] vetor, Scanner scan) {
         for (int i = 0; i < vetor.length; i++) {
-            System.out.print("Escreva o valor " + i + " : ");
+            System.out.print("\n Escreva o valor " + i + " : ");
             vetor[i] = scan.nextInt();
         }
     }

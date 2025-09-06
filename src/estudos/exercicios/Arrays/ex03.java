@@ -19,7 +19,7 @@ public class ex03 {
 
         Scanner scan = new Scanner(System.in);
 
-        double[] vetorA = new double[15];
+        double[] vetorA = new double[4];
 
         lerVetor(vetorA, scan);
         double [] vetorB = calcularQuadrado(vetorA);
