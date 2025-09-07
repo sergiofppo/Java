@@ -1,9 +1,9 @@
-package estudos.exercicios.Arrays;
+package estudos.Arrays.exercicios;
 
 import java.util.Scanner;
 
-import static estudos.exercicios.Arrays.ex01.imprimirVetor;
-import static estudos.exercicios.Arrays.ex01.lerVetor;
+import static estudos.Arrays.exercicios.ex01.imprimirVetor;
+import static estudos.Arrays.exercicios.ex01.lerVetor;
 
 public class ex06 {
 
