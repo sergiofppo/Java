@@ -11,7 +11,7 @@ public class ex04 {
 
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
-                System.out.print("Escreva o valor dos numeros da matriz: ");
+                System.out.print("Escreva o valor da posicao ["+ i+ ","+ j+"]: ");
                 matriz[i][j] = scan.nextInt();
             }
         }
