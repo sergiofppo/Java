@@ -15,7 +15,8 @@ public class ex08 {
         }
 
     }
-    public static double leNumero() throws Exception  {
+
+    public static double leNumero() throws Exception {
         Scanner scan = new Scanner(System.in);
         double num = scan.nextDouble();
         return num;
