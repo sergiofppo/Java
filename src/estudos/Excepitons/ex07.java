@@ -1,6 +1,5 @@
 package estudos.Excepitons;
 
-import java.sql.SQLOutput;
 
 public class ex07 {
     public static void main(String[] args) {
