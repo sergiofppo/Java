@@ -8,15 +8,23 @@ public class main {
         Agenda agenda = new Agenda();
         int opcao = 1;
 
-        while (opcao != 3) {
+        while (opcao != 4) {
             opcao = obterOpcaoMenu(scan);
 
-            if (opcao == 1) {
-                // consultar contato
-                consultarContato(scan, agenda);
-            } else if (opcao == 2) {
-                // add contato
-                adicionarContato(scan, agenda);
+            switch (opcao) {
+                case 1:
+                    consultarContato(scan, agenda);
+                    break;
+                case 2:
+                    adicionarContato(scan, agenda);
+                    break;
+                case 3:
+                    try {
+                        agenda.imprimirContatos();
+                    } catch (NaoTemContatosException e) {
+                        System.out.println(e.getMessage());
+                    }
+                    break;
             }
         }
     }
@@ -65,19 +73,20 @@ public class main {
 
     public static int obterOpcaoMenu(Scanner scan) {
         boolean entradaValida = false;
-        int opcao = 3;
+        int opcao = 4;
 
         while (!entradaValida) {
             System.out.println("Digite a opcao desejada: ");
             System.out.println("1: CONSULTAR CONTATO");
             System.out.println("2: ADICIONAR CONTATO");
-            System.out.println("3: SAIR");
+            System.out.println("3: IMPRIMIR CONTATOS");
+            System.out.println("4: SAIR");
 
             try {
                 String entrada = scan.nextLine();
                 opcao = Integer.parseInt(entrada);
 
-                if (opcao == 1 || opcao == 2 || opcao == 3) {
+                if (opcao >= 1 && opcao <= 4) {
                     entradaValida = true;
                 } else {
                     throw new Exception("Entrada Invalida");

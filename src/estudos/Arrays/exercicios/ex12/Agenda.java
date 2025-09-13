@@ -5,7 +5,7 @@ public class Agenda {
     private Contato[] contatos;
 
     public Agenda() {
-        contatos = new Contato[5];
+        contatos = new Contato[3];
     }
 
     public void adicionarContato(Contato c) throws AgendaCheiaException {
@@ -32,6 +32,20 @@ public class Agenda {
         }
        throw new ContatoNaoExisteException(nome);
     }
+
+    public void imprimirContatos() throws NaoTemContatosException {
+        boolean vazia = true;
+        for (Contato c : contatos) {
+            if (c != null) {
+                vazia = false;
+                System.out.println(c);
+            }
+        }
+        if (vazia) {
+            throw new NaoTemContatosException();
+        }
+    }
+
 
     @Override
     public String toString() {
