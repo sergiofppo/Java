@@ -1,5 +1,6 @@
 package estudos.Arrays.exercicios.ex12;
 
+
 public class Agenda {
     private Contato[] contatos;
 

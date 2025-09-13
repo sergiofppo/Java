@@ -45,6 +45,7 @@ public class main {
         }
     }
 
+
     public static void consultarContato(Scanner scan, Agenda agenda) {
         String nomeContato = lerInformacao(scan, "Entre com o nome do contato: ");
         try {
@@ -86,7 +87,6 @@ public class main {
                 System.out.println("Entrada Invalida, Digite novamente.\n");
             }
         }
-
         return opcao;
     }
 }
