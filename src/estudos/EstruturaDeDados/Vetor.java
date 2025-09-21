@@ -1,8 +1,9 @@
-package estudos.EstruturaDeDados.Arrays;
+package estudos.EstruturaDeDados;
 
 import java.util.Arrays;
 
 public class Vetor {
+
     private String[] elementos;
     private int tamanho;
 

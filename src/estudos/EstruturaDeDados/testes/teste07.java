@@ -1,6 +1,6 @@
-package estudos.EstruturaDeDados.Arrays.testes;
+package estudos.EstruturaDeDados.testes;
 
-import estudos.EstruturaDeDados.Arrays.Vetor;
+import estudos.EstruturaDeDados.Vetor;
 
 public class teste07 {
     public static void main(String[] args) {
