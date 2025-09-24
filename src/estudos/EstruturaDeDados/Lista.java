@@ -8,7 +8,7 @@ public class Lista<T> {
     private int tamanho;
 
     public Lista(int capacidade) {
-        this.elementos = new Object[capacidade];
+        this.elementos = (T[]) new Object[capacidade];
         this.tamanho = 0;
     }
 
@@ -17,7 +17,7 @@ public class Lista<T> {
         this.tamanho = 0;
     }
 
-    public boolean adiciona(Object elemento) {
+    public boolean adiciona(T elemento) {
         aumentaCapacidade();
         if (this.tamanho < this.elementos.length) {
             this.elementos[this.tamanho] = elemento;
@@ -28,7 +28,7 @@ public class Lista<T> {
         }
     }
 
-    public boolean adiciona(int posicao, Object elemento) {
+    public boolean adiciona(int posicao, T elemento) {
         aumentaCapacidade();
         if (!(posicao >= 0 && posicao < tamanho)) {
             throw new IllegalArgumentException("Posicao invalida");
@@ -46,7 +46,7 @@ public class Lista<T> {
 
     private void aumentaCapacidade() {
         if (this.tamanho == this.elementos.length) {
-            Object[] elementosNovos = new Object[this.elementos.length * 2];
+            T[] elementosNovos = (T[]) new Object[this.elementos.length * 2];
             for (int i = 0; i < this.elementos.length; i++) {
                 elementosNovos[i] = this.elementos[i];
             }

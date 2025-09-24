@@ -6,7 +6,9 @@ public class teste09 {
 
         Lista<String> vetor = new Lista<String>(1);
 
+        vetor.adiciona("Elemento");
 
+        System.out.println(vetor);
 
 
     }
