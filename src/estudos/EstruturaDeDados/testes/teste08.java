@@ -1,10 +1,10 @@
 package estudos.EstruturaDeDados.testes;
 
-import estudos.EstruturaDeDados.VetorObjetos;
+import estudos.EstruturaDeDados.vetorObjetos;
 
 public class teste08 {
     public static void main(String[] args) {
-        VetorObjetos vetor = new VetorObjetos(3);
+        vetorObjetos vetor = new vetorObjetos(3);
         vetor.adiciona(3);
         vetor.adiciona(4);
         vetor.adiciona(5);
