@@ -14,5 +14,12 @@ public class teste12 {
         arrayList.add("A");
 
         System.out.println(arrayList.lastIndexOf("A"));
+
+        Lista<String> lista = new Lista<String>(5);
+        lista.adiciona("A");
+        lista.adiciona("B");
+        lista.adiciona("A");
+
+        System.out.println(lista.ultimoIndice("A"));
     }
 }
