@@ -15,5 +15,6 @@ public class teste11 {
         System.out.println(lista.contem("C"));
         lista.remove("A");
         System.out.println(lista);
+        System.out.println(lista.busca(1));
     }
 }

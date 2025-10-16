@@ -54,14 +54,18 @@ public class Lista<T> {
         }
     }
 
-    public Object busca(int posicao) {
+    public T busca(int posicao) {
         if (!(posicao >= 0 && posicao < tamanho)) {
             throw new IllegalArgumentException("Posicao invalida");
         }
         return this.elementos[posicao];
     }
 
-    public int busca(Object elemento) {
+    public T obtem(int posicao) {
+        return this.busca(posicao);
+    }
+
+    public int busca(T elemento) {
         for (int i = 0; i < this.tamanho; i++) {
             if (this.elementos[i].equals(elemento)) {
                 return i;
