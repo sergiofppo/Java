@@ -13,5 +13,7 @@ public class teste11 {
         System.out.println(lista.contem("A"));
         System.out.println(lista.contem("D"));
         System.out.println(lista.contem("C"));
+        lista.remove("A");
+        System.out.println(lista);
     }
 }
