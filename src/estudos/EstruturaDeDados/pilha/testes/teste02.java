@@ -11,5 +11,7 @@ public class teste02 {
         }
         System.out.println(pilha);
         System.out.println(pilha.tamanho());
+
+        System.out.println(pilha.isEmpty());
     }
 }

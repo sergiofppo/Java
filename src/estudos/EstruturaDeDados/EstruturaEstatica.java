@@ -55,6 +55,10 @@ public class EstruturaEstatica<T> {
         return this.tamanho;
     }
 
+    public boolean isEmpty() {
+        return this.tamanho == 0;
+    }
+
     @Override
     public String toString() {
         StringBuilder s = new StringBuilder();
