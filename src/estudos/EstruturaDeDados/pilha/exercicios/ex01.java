@@ -9,7 +9,7 @@ public class ex01 {
         Stack<Integer> stack = new Stack<Integer>();
 
         for (int i = 0; i < 10; i++) {
-            System.out.println(i+1 + ". Digite um numero: ");
+            System.out.print(i+1 + ". Digite um numero: ");
             int numero = scan.nextInt();
             if (numero % 2 == 0) {
                 System.out.println("Numero par! Emplilhando..." + stack.push(numero));
@@ -23,7 +23,7 @@ public class ex01 {
             System.out.println("Pilha agora: " + stack);
             System.out.println("--------------------");
         }
-        System.out.println("\n--- FIM DA LEITURA ---");
+        System.out.println("\n   FIM DA LEITURA  ");
         if (stack.isEmpty()) {
             System.out.println("A pilha esta vazia!");
         } else {
