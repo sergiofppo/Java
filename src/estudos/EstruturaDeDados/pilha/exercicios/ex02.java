@@ -5,8 +5,8 @@ import java.util.Stack;
 
 public class ex02 {
     public static void main(String[] args) {
-        Stack<Integer> pilhaPar = new Stack<Integer>();
-        Stack<Integer> pilhaImpar = new Stack<Integer>();
+        Stack<Integer> pilhaPar = new Stack<>();
+        Stack<Integer> pilhaImpar = new Stack<>();
         Scanner scan = new Scanner(System.in);
 
         for (int i = 0; i < 10; i++) {
