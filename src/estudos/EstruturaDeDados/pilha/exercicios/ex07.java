@@ -10,17 +10,17 @@ public class ex07 {
         imprimeResultado(10);
         imprimeResultado(25);
         imprimeResultado(10035);
-        imprimeResultadoQualquerBase(25, 16);
+        imprimeResultadoQualquerBase(90, 16);
         imprimeResultadoQualquerBase(100, 17);
 
     }
 
     public static void imprimeResultado(int numero) {
-        System.out.println(numero + " em binario e: " + decimalBinario(numero));
+        System.out.println(numero + " em binario: " + decimalBinario(numero));
     }
 
     public static void imprimeResultadoQualquerBase(int numero, int base) {
-        System.out.println(numero + " na base e: " + decimalQualquerBase(numero, base));
+        System.out.println(numero + " na base " + base + ": " + decimalQualquerBase(numero, base));
     }
 
     public static String decimalBinario(int numero) {
@@ -45,7 +45,7 @@ public class ex07 {
     public static String decimalQualquerBase(int numero, int base) {
 
         if (base > 16) {
-            throw new IllegalArgumentException();
+            System.out.println("Sua base deve ser menor que 16");
         }
 
         Stack<Integer> stack = new Stack<>();
